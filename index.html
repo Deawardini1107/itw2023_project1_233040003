@@ -48,7 +48,6 @@
         <h3>Hello, It's Me</h3>
         <h1>Dea Wardini</h1>
         <h3>And I'm a <span>Web Developer</span></h3>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
         <div class="social-media">
           <a href="#"><i class="bx bxl-instagram-alt"></i></a>
         </div>
@@ -137,25 +136,33 @@
       <div class="header-text">
         <h1>Contact Me</h1>
       </div>
-      <form action="">
+      <form name="submit-to-google-sheet" action="">
         <div class="container-contact">
           <div class="form-group">
-            <label for="nama">Nama Lengkap</label>
-            <input class="input" placeholder="masukan nama" />
+            <label>Nama Lengkap</label>
+            <input class="input" placeholder="masukan nama" name="nama" />
           </div>
           <div class="form-group">
-            <label for="nama">Email</label>
-            <input class="input" placeholder="masukan email" />
+            <label>Email</label>
+            <input class="input" placeholder="masukan email" name="email" />
           </div>
           <div class="form-group">
-            <label for="nama">pesan</label>
-            <textarea cols="4" rows="4" placeholder="masukan pesan"></textarea>
+            <label>pesan</label>
+            <textarea cols="4" rows="4" placeholder="masukan pesan" name="pesan"></textarea>
           </div>
           <div class="kirim">
-            <button class="btn">kirim</button>
+            <button class="btn" type="submit">kirim</button>
           </div>
         </div>
       </form>
+      <div class="alert-close alert-success alert">
+        <span>Terimakasih, pesan anda sudah terkirim.</span>
+        <i class="bx bx-x" onclick="closeAlert(event)"></i>
+      </div>
+      <div class="alert-close alert-danger alert">
+        <span>Maaf, pesan anda gagal terkirim</span>
+        <i class="bx bx-x" onclick="closeAlert(event)"></i>
+      </div>
     </section>
 
     <footer id="footer">
@@ -164,5 +171,7 @@
       <a> Dea Wardini. </a>
     </footer>
     <script src="js/navBar.js"></script>
+
+    <script src="js/spreadSheet.js"></script>
   </body>
 </html>
