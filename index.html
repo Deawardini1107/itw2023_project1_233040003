@@ -1,117 +1,168 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portofolio | Dea Wardini</title>
 
-<head>
-  <mata charset=UTF-8>
-  <meta http-equiv="X-UA-Compatible" content="IE-edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portofolio | Dea Wardini</title> 
+    <!-- box icons-->
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
 
-  <!-- box icons-->
-  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-
-  <!-- custom css-->
-  <link rel="stylesheet" href="css/style.css">
-</head>
-
-<body>
-
-  <!-- header design -->
-  <header class="header">
-    <a href="#" class="logo">Dea Wardini</a>
-
-    <i class='bx bx-menu' id="menu-icon"></i>
-
-    <nav class="navbar">
-      <a href="#home" class="active">Home</a>
-      <a href="#about">About</a>
-      <a href="#skill">Skill</a>
-      <a href="#gallery">Gallery</a>
-      <a href="#contact">Contact</a>
+    <!-- custom css-->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav>
+      <div class="logo-nav">
+        <h3>deawrdnii</h3>
+      </div>
+      <ul>
+        <li>
+          <a href="#home">Home</a>
+        </li>
+        <li>
+          <a href="#about">About</a>
+        </li>
+        <li>
+          <a href="#skill">Skill</a>
+        </li>
+        <li>
+          <a href="#gallery">Gallery</a>
+        </li>
+        <li>
+          <a href="#contact">Contact</a>
+        </li>
+      </ul>
+      <div class="menu-toggle" id="">
+        <input type="checkbox" name="" id="nav-toggle" />
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
     </nav>
-  </header>
 
-  <!-- home section design -->
-  <section class="home" id="home">
-    <div class="home-content">
-      <h3>Hello, It's Me</h3>
-      <h1>Dea Wardini</h1>
-      <h3>And I'm a <span>Female Student</span></h3>
-      <p>Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
-      <div class="social-media">
-        <a href="#"><i class='bx bxl-instagram-alt'></i></a>
+    <!-- home section design -->
+    <section class="container-home" id="home">
+      <div class="home-content">
+        <h3>Hello, It's Me</h3>
+        <h1>Dea Wardini</h1>
+        <h3>And I'm a <span>Web Developer</span></h3>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
+        <div class="social-media">
+          <a href="#"><i class="bx bxl-instagram-alt"></i></a>
+        </div>
+        <a href="#" class="btn">Download CV</a>
       </div>
-      <a href="#" class="btn">Download CV</a>  
-    </div>
 
-    <div class="home-img">
-      <div class="img-box">
-        <img src="img/dea.jpeg" alt="" width="200" class="rounded-circle"/>
-      </div>
-    </div>
-  </section>
-
-  <!-- about section design -->
-  <section class="about" id="about">
-    <div class="bout-img">
-      <img src="img/about.jpeg" alt="">
-    </div>
-
-    <div class="about-content">
-      <h2 class="heading">About <span>Me</span></h2>
-      <h3>Mahasiswa</h3>
-      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores qui tempora adipisci tenetur culpa officia voluptatum, id enim voluptates impedit velit corrupti voluptate laborum nesciunt doloribus, nulla assumenda aliquam fuga sed aspernatur explicabo eos! Pariatur cupiditate sunt dolorem tenetur deleniti et aut voluptatem atque similique porro.
-      </p>
-    <a href="#" class="btn">Read More</a>  
-    </div>
-
-  </section>
-
-  <!-- skills section design--><section id="skill">
-  <section id="skill">
-    <div class="container-skill">
-      <div data-aos="fade-down" class="header-text">
-        <h1>Skills</h1>
-      </div>
-        <div class="skills">
-          <div data-aos="fade-up" class="card-skill">
-          <img src="img/html-icon.svg" alt="html" srcset="" />
-          </div>
-        <div data-aos="fade-up" class="card-skill">
-          <img src="img/css-icon.svg" alt="css" srcset="" />
+      <div class="home-img">
+        <div class="img-box">
+          <img src="img/dea.jpeg" alt="" />
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- gallery section design -->
-  <section id="Gallery">
-    <a target="_blank" href="img/gallery1.jpeg">
-      <img src="img/gallery1.jpeg" alt="Cinque Terre" width="300" height="400">
-    </a>
-  </div>
-  
-  <div class="Gallery">
-    <a target="_blank" href="img/gallery2.jpeg">
-      <img src="img/gallery2.jpeg" alt="Forest" width="300" height="400">
-    </a>
-  </div>
-  
-  <div class="Gallery">
-    <a target="_blank" href="img/gallery3.jpeg">
-      <img src="img/gallery3.jpeg" alt="Northern Lights" width="300" height="400">
-    </a>
-  </div>
-  
-  <div class="Gallery">
-    <a target="_blank" href="img/gallery4.jpeg">
-      <img src="img/gallery4.jpeg" alt="Mountains" width="300" height="400">
-    </a>
-  </div>
-  </section>
-  
+    <!-- about section design -->
+    <section id="about">
+      <div class="header-text">
+        <h2 class="heading">about <span>Me</span></h2>
+      </div>
+      <div class="container-about">
+        <div class="about-img">
+          <img src="img/about.jpeg" alt="" />
+        </div>
+
+        <div class="about-content">
+          <p>
+            Hallo semuanya!Saya Dea Wardini,Saya suka membuat website yang sederhana dan elegan,dan saya juga sangat tertarik dengan perkembangan teknologi.Saya masih belajar di html dan css semoga saya benar-benar bisa menguasainya dengan
+            baik dan benar.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- skills section design-->
+    <section id="skill">
+      <div class="header-text">
+        <h1>Skills</h1>
+      </div>
+      <div class="container-skill">
+        <div class="skills">
+          <div class="card-skill">
+            <img src="img/html-icon.svg" alt="html" srcset="" />
+          </div>
+        </div>
+        <div class="skills">
+          <div class="card-skill">
+            <img src="img/css-icon.svg" alt="css" srcset="" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- gallery section design -->
+    <section id="gallery">
+      <div data-aos="fade-down" class="header-text">
+        <h1>Gallery</h1>
+      </div>
+      <div class="container-gallery">
+        <div class="gallery">
+          <a target="_blank" href="img/gallery1.jpeg">
+            <img src="img/gallery1.jpeg" alt="Cinque Terre" width="100" height="100" />
+          </a>
+        </div>
+
+        <div class="gallery">
+          <a target="_blank" href="img/gallery2.jpeg">
+            <img src="img/gallery2.jpeg" alt="Forest" width="300" height="400" />
+          </a>
+        </div>
+
+        <div class="gallery">
+          <a target="_blank" href="img/gallery3.jpeg">
+            <img src="img/gallery3.jpeg" alt="Northern Lights" width="300" height="400" />
+          </a>
+        </div>
+
+        <div class="gallery">
+          <a target="_blank" href="img/gallery4.jpeg">
+            <img src="img/gallery4.jpeg" alt="Mountains" width="300" height="400" />
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- contact section design -->
+    <section id="contact">
+      <div class="header-text">
+        <h1>Contact Me</h1>
+      </div>
+      <form action="">
+        <div class="container-contact">
+          <div class="form-group">
+            <label for="nama">Nama Lengkap</label>
+            <input class="input" placeholder="masukan nama" />
+          </div>
+          <div class="form-group">
+            <label for="nama">Email</label>
+            <input class="input" placeholder="masukan email" />
+          </div>
+          <div class="form-group">
+            <label for="nama">pesan</label>
+            <textarea cols="4" rows="4" placeholder="masukan pesan"></textarea>
+          </div>
+          <div class="kirim">
+            <button class="btn">kirim</button>
+          </div>
+        </div>
+      </form>
+    </section>
+
+    <footer id="footer">
+      <span>Made with <span> &#10084; </span>, </span>
+      <span>© 2023 Copyright: </span>
+      <a> Dea Wardini. </a>
+    </footer>
+    <script src="js/navBar.js"></script>
   </body>
-  </html>
-  
-            
-             
+</html>
